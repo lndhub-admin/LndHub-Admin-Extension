@@ -32,3 +32,5 @@ In adminConfig.js set "adminUIPath" and also set the "adminPin"
 after start of LndHub the admin extension can be reached at 
 
 ***LndHubURL:port/adminUIPath***
+
+OBS: awaiting Fee Settings from config.js PR be rolled in into BlueWallet/LndHub before use, alt checkout the branch https://github.com/lndhub-admin/LndHub/tree/Admin-Extension-router here and test :OBS
