@@ -15,6 +15,7 @@ One can build diffrent API calls and use any framework for UI, the shipped one h
 - CSS3
 - Vanilla.js
 - Mustache.js
+
 addons can be made as components.
 
 ***INSTALL***
