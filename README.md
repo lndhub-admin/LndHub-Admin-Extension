@@ -26,7 +26,7 @@ app.use(require('./controllers/api'));
 //add
 app.use(require('./extensions/admin/adminRouter'));
 ```
-In adminConfig.js set "adminUIPath" to admin API and also set the "adminPin"
+In adminConfig.js set "adminUIPath" and also set the "adminPin"
 
 after start of LndHub the admin extension can be reached at 
 
