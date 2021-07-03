@@ -9,3 +9,11 @@ HTML5
 CSS3
 Vanilla.js
 addons can be made as components.
+
+***INSTALL***
+Drop folder into /LndHub/index.js line after
+```
+app.use(require('./controllers/api'));
+//add
+app.use(require('./extensions/admin/adminRouter'));
+```
