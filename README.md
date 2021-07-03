@@ -18,11 +18,13 @@ One can build diffrent API calls and use any framework for UI, the one shipped h
 
 addons can be made as components.
 
-***INSTALL***
+***INSTALL :***
+
 Drop folder into /LndHub
 
-and in /LndHub/index.js line after
+and in /LndHub/index.js line 
 ```
+//after
 app.use(require('./controllers/api'));
 //add
 app.use(require('./extensions/admin/adminRouter'));
