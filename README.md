@@ -18,7 +18,9 @@ One can build diffrent API calls and use any framework for UI, the shipped one h
 addons can be made as components.
 
 ***INSTALL***
-Drop folder into /LndHub/index.js line after
+Drop folder into /LndHub
+
+and in /LndHub/index.js line after
 ```
 app.use(require('./controllers/api'));
 //add
