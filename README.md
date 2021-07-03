@@ -10,7 +10,7 @@ Idea is to be able extend LndHub Admin Router with API calls and can have some d
 
 The Example Router has access to all of BlueWallet Lightning LndHub API + Redis DB + Lightning + all NPMs in package.json
 
-One can build diffrent API calls and use any framework for UI, the shipped one here use 
+One can build diffrent API calls and use any framework for UI, the one shipped here use 
 - HTML5
 - CSS3
 - Vanilla.js
