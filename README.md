@@ -18,13 +18,14 @@ addons can be made as components.
 ***INSTALL*** 
 
 (need PR https://github.com/BlueWallet/LndHub/pull/238)
-
-(or dload https://github.com/lndhub-admin/LndHub/tree/Admin-Extension-router)
-
-
 Drop folder into /LndHub/index.js line after
 ```
 app.use(require('./controllers/api'));
 //add
 app.use(require('./extensions/admin/adminRouter'));
 ```
+
+(or dload https://github.com/lndhub-admin/LndHub/tree/Admin-Extension-router)
+
+
+
