@@ -108,7 +108,7 @@ router.post(`${adminPath}/feesettings/setfees`, async function (req, res) { // R
 
 module.exports = router;
 
-/****** AUTH FUNCLIONS ******/
+/****** AUTH FUNCTIONS ******/
 global.adminPin = config.adminPin;
 /** */
 function authAdmin(authorization) {
@@ -119,7 +119,7 @@ function authAdmin(authorization) {
   }
   return false;
 }
-/****** END AUTH FUNCLIONS ******/
+/****** END AUTH FUNCTIONS ******/
 
 // ** START DYNAMIC FEE SETTINGS FUNCTIONS * /
 
