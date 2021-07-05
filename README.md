@@ -2,7 +2,7 @@ This is a example extension router with a example UI that has one component Fees
 
 Idea is to be able extend LndHub Admin Router with API calls and can have some or all of them decorateded with a UI.
 
-The Example Router has access to all of BlueWallet Lightning LndHub API + Redis DB + Lightning + all NPMs in package.json
+The Example Router has access to all of BlueWallet Lightning API in LndHub + Redis DB + LND gRPC + all NPMs in package.json
 
 One can build diffrent API calls and can use any framework for UI, 
 
