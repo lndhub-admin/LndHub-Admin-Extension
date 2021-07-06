@@ -40,6 +40,7 @@ addons can be made as components.
 ***INSTALL*** 
 
 (need PR https://github.com/BlueWallet/LndHub/pull/238)
+
 Drop folder into /LndHub and in /index.js line 
 ```javascript
 // after
