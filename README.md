@@ -22,6 +22,21 @@ the shipped example UI here use :
 
 addons can be made as components.
 
+
+        extensions/
+        └── admin
+            ├── README.md
+            ├── adminConfig.js
+            ├── adminRouter.js
+            └── public
+                ├── admin.css
+                ├── comp_feeSetting.html
+                ├── comp_feeSettings.js
+                ├── comp_meny.html
+                └── indexTemplate.html
+
+
+
 ***INSTALL*** 
 
 (need PR https://github.com/BlueWallet/LndHub/pull/238)
@@ -35,15 +50,3 @@ app.use(require('./extensions/admin/adminRouter'));
 
 (or dload https://github.com/lndhub-admin/LndHub/tree/Admin-Extension-router)
 
-
-        extensions/
-        └── admin
-            ├── README.md
-            ├── adminConfig.js
-            ├── adminRouter.js
-            └── public
-                ├── admin.css
-                ├── comp_feeSetting.html
-                ├── comp_feeSettings.js
-                ├── comp_meny.html
-                └── indexTemplate.html
