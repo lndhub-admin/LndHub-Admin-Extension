@@ -31,7 +31,7 @@ addons can be made as components.
             └── public
                 ├── admin.css
                 ├── comp_feeSetting.html
-                ├── comp_feeSettings.js
+                ├── comp_feeSetting.js
                 ├── comp_meny.html
                 └── indexTemplate.html
 
