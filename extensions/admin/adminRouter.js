@@ -7,9 +7,6 @@ let express = require('express');
 let router = express.Router();
 let logger = require('../../utils/logger');
 
-// import { send } from 'process';
-// const { exec } = require('child_process')
-
 const fs = require('fs');
 const mustache = require('mustache');
 
@@ -32,13 +29,15 @@ redis.monitor(function (err, monitor) {
 });
 
 let lightning = require('../../lightning');
-let identity_pubkey = false;
+let identity_pubkey = null;
 
 /****** INDEX ADMIN EXTENSION  ******/
 /****** IMPORT TEMPLATES ******/
 let indexTemplate = fs.readFileSync(`${loadPath}/indexTemplate.html`).toString('utf8');
+let indexRendered = mustache.render(indexTemplate, { head: adminUserName });
+let comp_meny = fs.readFileSync(`${loadPath}/comp_meny.html`).toString('utf8');
 
-/****** INDEX of path set adminPath in adminConfig.js  /******/
+/****** INDEX of path, set adminPath in adminConfig.js  ******/
 router.get(`${adminPath}`, async function (req, res) { // REWISIT FIX AUTH = some else then adminPin
   logger.log(`${adminPath}`, [req.id]);
   res.setHeader('Content-Type', 'text/html');
@@ -55,12 +54,10 @@ router.get('/admin', async function (req, res) {
   let reply = ` Hey Yo wzup - if You do not know Your way around here ? ... then You do not know Your way around here ! `;
   res.send(reply);
 });
-/****** END ADMIN INDEX /*******/
+/****** END INDEX ADMIN EXTENSION *******/
 
 /****** COMPONENT DYNAMIC FEES API URL/get/set ******/
 /****** FORWARD + INTRA FEES / MUSTACHE RENDERED ******/
-let indexRendered = mustache.render(indexTemplate, { head: adminUserName });
-let comp_meny = fs.readFileSync(`${loadPath}/comp_meny.html`).toString('utf8');
 let comp_feeSetting = fs.readFileSync(`${loadPath}/comp_feeSetting.html`).toString('utf8');
 
 /** */
@@ -119,7 +116,7 @@ function authAdmin(authorization) {
   }
   return false;
 }
-/****** END AUTH FUNCTIONS ******/
+/****** END AUTH FUNCLIONS ******/
 
 // ** START DYNAMIC FEE SETTINGS FUNCTIONS * /
 
