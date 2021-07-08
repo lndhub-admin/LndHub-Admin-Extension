@@ -22,8 +22,6 @@ the shipped example UI here use :
 
 addons can be made as components.
 
-        ├── LICENSE
-        ├── README.md
         └── extensions
             └── admin
                 ├── adminConfig.js
@@ -32,6 +30,8 @@ addons can be made as components.
                 │   ├── authAdmin
                 │   │   └── README.md
                 │   ├── feeSettings
+                │   │   └── README.md
+                │   ├── grantAccount
                 │   │   └── README.md
                 │   ├── infoStator
                 │   │   └── README.md
@@ -45,8 +45,10 @@ addons can be made as components.
                     ├── comp_feeSetting.js
                     ├── comp_meny.html
                     ├── css
+                    │   └── adminStyle.css
                     ├── indexTemplate.html
                     └── js
+                        └── adminJS.js
 
 Under refactoring of the component design
 
