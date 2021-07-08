@@ -1,4 +1,4 @@
-This is a __example extension router__ with a __example UI__ that has one __component Fees Settings__ installed.
+This is a __example extension router__ with a __example UI__ that has one __component Fee Setting__ installed.
 
 Idea is to be able extend LndHub Admin Router with API calls and can have some or all of them decorateded with a UI.
 
@@ -40,6 +40,7 @@ addons can be made as components.
 ***INSTALL*** 
 
 (need PR https://github.com/BlueWallet/LndHub/pull/238)
+
 Drop folder into /LndHub and in /index.js line 
 ```javascript
 // after
