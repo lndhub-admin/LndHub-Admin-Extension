@@ -53,7 +53,7 @@ addons can be made as components.
                     ├── indexTemplate.html
                     └── js
 
-Under refactoring of the component design
+Under refactoring of the component design, right now only feeSetting component installed
 
 **_INSTALL_**
 
