@@ -1,3 +1,3 @@
-refactoring home for invoiceDecoder
+refactoring home for InvoiceDecoder
 
 - decode bolt11

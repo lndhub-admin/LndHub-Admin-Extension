@@ -1,4 +1,4 @@
-refactoring home for authAdmin
+refactoring home for AuthAdmin
 
 - adminPin
 - invoiceLogin

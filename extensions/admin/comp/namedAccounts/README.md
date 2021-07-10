@@ -1,4 +1,4 @@
-refactoring home for namedAccounts
+refactoring home for NamedAccounts
 
 - enable using "name" for accounts
 - namePin
