@@ -27,21 +27,21 @@ addons can be made as components.
                 ├── adminConfig.js
                 ├── adminRouter.js
                 ├── comp
+                │   ├── AuthAdmin
+                │   │   └── README.md
+                │   ├── FeeSettings
+                │   │   └── README.md
+                │   ├── GrantAccount
+                │   │   └── README.md
+                │   ├── InfoStator
+                │   │   └── README.md
+                │   ├── InvoiceDecoder
+                │   │   └── README.md
+                │   ├── NamedAccounts
+                │   │   └── README.md
                 │   ├── QRCodec
                 │   │   └── README.md
-                │   ├── authAdmin
-                │   │   └── README.md
-                │   ├── feeSettings
-                │   │   └── README.md
-                │   ├── grantAccount
-                │   │   └── README.md
-                │   ├── infoStator
-                │   │   └── README.md
-                │   ├── invoiceDecoder
-                │   │   └── README.md
-                │   ├── namedAccounts
-                │   │   └── README.md
-                │   └── webWallet
+                │   └── WebWallet
                 │       └── README.md
                 └── public
                     ├── admin.css
@@ -52,7 +52,6 @@ addons can be made as components.
                     │   └── adminStyle.css
                     ├── indexTemplate.html
                     └── js
-                        └── adminJS.js
 
 Under refactoring of the component design
 
