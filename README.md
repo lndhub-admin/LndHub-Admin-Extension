@@ -27,6 +27,8 @@ addons can be made as components.
                 ├── adminConfig.js
                 ├── adminRouter.js
                 ├── comp
+                │   ├── QRCodec
+                │   │   └── README.md
                 │   ├── authAdmin
                 │   │   └── README.md
                 │   ├── feeSettings
@@ -34,6 +36,8 @@ addons can be made as components.
                 │   ├── grantAccount
                 │   │   └── README.md
                 │   ├── infoStator
+                │   │   └── README.md
+                │   ├── invoiceDecoder
                 │   │   └── README.md
                 │   ├── namedAccounts
                 │   │   └── README.md
