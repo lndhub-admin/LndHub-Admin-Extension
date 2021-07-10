@@ -33,6 +33,8 @@ addons can be made as components.
                 │   │   └── README.md
                 │   ├── GrantAccount
                 │   │   └── README.md
+                │   ├── HelpDesk
+                │   │   └── README.md
                 │   ├── InfoStator
                 │   │   └── README.md
                 │   ├── InvoiceDecoder
@@ -52,6 +54,7 @@ addons can be made as components.
                     │   └── adminStyle.css
                     ├── indexTemplate.html
                     └── js
+                        └── adminJS.js
 
 Under refactoring of the component design, right now only feeSetting component installed
 
