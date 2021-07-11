@@ -35,7 +35,7 @@ addons can be made as components.
             │       │   └── adminStyle.css
             │       ├── indexTemplate.html
             │       └── js
-            │           └── adminJS.js
+            │           └── adminBase.js
             └── components
                 ├── AuthAdmin
                 │   └── README.md
