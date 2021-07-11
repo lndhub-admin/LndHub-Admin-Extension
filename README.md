@@ -23,38 +23,38 @@ the shipped example UI here use :
 addons can be made as components.
 
         └── extensions
-            └── admin
-                ├── adminConfig.js
-                ├── adminRouter.js
-                ├── comp
-                │   ├── AuthAdmin
-                │   │   └── README.md
-                │   ├── FeeSettings
-                │   │   └── README.md
-                │   ├── GrantAccount
-                │   │   └── README.md
-                │   ├── HelpDesk
-                │   │   └── README.md
-                │   ├── InfoStator
-                │   │   └── README.md
-                │   ├── InvoiceDecoder
-                │   │   └── README.md
-                │   ├── NamedAccounts
-                │   │   └── README.md
-                │   ├── QRCodec
-                │   │   └── README.md
-                │   └── WebWallet
-                │       └── README.md
-                └── public
-                    ├── admin.css
-                    ├── comp_feeSetting.html
-                    ├── comp_feeSetting.js
-                    ├── comp_meny.html
-                    ├── css
-                    │   └── adminStyle.css
-                    ├── indexTemplate.html
-                    └── js
-                        └── adminJS.js
+            ├── admin
+            │   ├── adminConfig.js
+            │   ├── adminRouter.js
+            │   └── public
+            │       ├── admin.css
+            │       ├── comp_feeSetting.html
+            │       ├── comp_feeSetting.js
+            │       ├── comp_meny.html
+            │       ├── css
+            │       │   └── adminStyle.css
+            │       ├── indexTemplate.html
+            │       └── js
+            │           └── adminJS.js
+            └── components
+                ├── AuthAdmin
+                │   └── README.md
+                ├── FeeSettings
+                │   └── README.md
+                ├── GrantAccount
+                │   └── README.md
+                ├── HelpDesk
+                │   └── README.md
+                ├── InfoStator
+                │   └── README.md
+                ├── InvoiceDecoder
+                │   └── README.md
+                ├── NamedAccounts
+                │   └── README.md
+                ├── QRCodec
+                │   └── README.md
+                └── WebWallet
+                    └── README.md
 
 Under refactoring of the component design, right now only feeSetting component installed
 
