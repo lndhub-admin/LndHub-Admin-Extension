@@ -38,10 +38,11 @@ let indexRendered = mustache.render(indexTemplate, { head: adminUserName });
 let comp_meny = fs.readFileSync(`${loadPath}/comp_meny.html`).toString('utf8');
 
 /****** INDEX of path, set adminPath in adminConfig.js  ******/
-router.get(`${adminPath}`, async function (req, res) { // REWISIT FIX AUTH = some else then adminPin
+router.get(`${adminPath}`, async function (req, res) { // REWISIT FIX AUTH = use Invoice to login
   logger.log(`${adminPath}`, [req.id]);
   res.setHeader('Content-Type', 'text/html');
   if (authAdmin(req.headers.authorization)) {
+    // REVISIT add attempt lockout
     // console.log('**************** AUTHORIZED ****************')
     return res.send(comp_meny);
   }
