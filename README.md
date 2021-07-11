@@ -83,5 +83,6 @@ in adminConfig.js
 }
 ```
 
-set path wanted to reach admin UI from <LndHub-URL>/adminUIPath
-and set the adminPin to something You would remember.
+### set path wanted to reach admin UI from <LndHub-URL>/adminUIPath
+
+### and set the adminPin to something You would remember.
