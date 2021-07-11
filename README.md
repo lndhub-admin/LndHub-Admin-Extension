@@ -73,7 +73,7 @@ app.use(require("./extensions/admin/adminRouter"));
 
 (or dload https://github.com/lndhub-admin/LndHub/tree/Admin-Extension-router)
 
-in adminConfig.js
+in /LndHub/extensions/admin/adminConfig.js
 
 ```javascript
 {
