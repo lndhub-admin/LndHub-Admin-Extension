@@ -72,3 +72,16 @@ app.use(require("./extensions/admin/adminRouter"));
 ```
 
 (or dload https://github.com/lndhub-admin/LndHub/tree/Admin-Extension-router)
+
+in adminConfig.js
+
+```javascript
+{
+  adminUIPath: '/ngu', // path to admin UI
+  adminUserName: 'Headbanana', // not used other then for display
+  adminPin: 'auth-pin-here', // Auth PIN
+}
+```
+
+set path wanted to reach admin UI from <LndHub-URL>/adminUIPath
+and set the adminPin to something You would remember.
