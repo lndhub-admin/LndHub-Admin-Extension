@@ -39,7 +39,7 @@ let comp_meny = fs.readFileSync(`${loadPath}/comp_meny.html`).toString('utf8');
 
 /****** INDEX of path, set adminPath in adminConfig.js  ******/
 router.get(`${adminPath}`, async function (req, res) { // REWISIT FIX AUTH = use Invoice to login
-  logger.log(`${adminPath}`, [req.id]);
+  logger.log(`${adminPath}`, [req.id, req.ip]);
   res.setHeader('Content-Type', 'text/html');
   if (authAdmin(req.headers.authorization)) {
     // REVISIT add attempt lockout
@@ -51,7 +51,7 @@ router.get(`${adminPath}`, async function (req, res) { // REWISIT FIX AUTH = use
 
 /** HONEYPOT */
 router.get('/admin', async function (req, res) {
-  logger.log('/admin', [req.id]);
+  logger.log('/admin', [req.id, req.ip]);
   let reply = ` Hey Yo wzup - if You do not know Your way around here ? ... then You do not know Your way around here ! `;
   res.send(reply);
 });
@@ -107,7 +107,7 @@ router.post(`${adminPath}/feesettings/setfees`, async function (req, res) { // R
 module.exports = router;
 
 /****** AUTH FUNCTIONS ******/
-global.adminPin = config.adminPin;
+// global.adminPin = config.adminPin;
 /** */
 function authAdmin(authorization) {
   if (!authorization) return false;
@@ -120,7 +120,6 @@ function authAdmin(authorization) {
 /****** END AUTH FUNCLIONS ******/
 
 // ** START DYNAMIC FEE SETTINGS FUNCTIONS * /
-
 /** set fees function for runtime change of ForwardReserveFee ******/
 async function setForwardReserveFee(incommingForwardFee) {
   forwardFee = incommingForwardFee;
