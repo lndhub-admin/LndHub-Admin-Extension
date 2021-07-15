@@ -35,9 +35,13 @@ addons can be made as components.
             │       │   └── adminStyle.css
             │       ├── indexTemplate.html
             │       └── js
-            │           └── adminBase.js
+            │           └── adminJS.js
             └── components
+                ├── Auction
+                │   └── README.md
                 ├── AuthAdmin
+                │   └── README.md
+                ├── BoS
                 │   └── README.md
                 ├── FeeSettings
                 │   └── README.md
@@ -45,11 +49,15 @@ addons can be made as components.
                 │   └── README.md
                 ├── HelpDesk
                 │   └── README.md
+                ├── Impervious
+                │   └── README.md
                 ├── InfoStator
                 │   └── README.md
                 ├── InvoiceDecoder
                 │   └── README.md
                 ├── NamedAccounts
+                │   └── README.md
+                ├── POSWallet
                 │   └── README.md
                 ├── QRCodec
                 │   └── README.md
