@@ -68,8 +68,6 @@ Under refactoring of the component design, right now only feeSetting component i
 
 **_INSTALL_**
 
-(need PR https://github.com/BlueWallet/LndHub/pull/238)
-
 Drop folder into /LndHub and in /index.js line
 
 ```javascript
@@ -78,8 +76,6 @@ app.use(require("./controllers/api"));
 // add
 app.use(require("./extensions/admin/adminRouter"));
 ```
-
-(or dload https://github.com/lndhub-admin/LndHub/tree/Admin-Extension-router)
 
 in /LndHub/extensions/admin/adminConfig.js
 
